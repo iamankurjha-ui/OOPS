@@ -23,11 +23,45 @@
 #A decorator is a function that modifies or extends the behavior 
 # of another function without changing its actual code.
 
+# def outer(var):
+#     def inner():
+#         var()
+#     return inner
+# def show():
+#     print("from show function")
+# res = outer(show)
+# res()
+
+
+# def outer(var):
+#     def inner():
+#         var()
+#     return inner
+# @outer
+# def show():
+#     print("from show function")
+# show()
+
+
+
+# def outer(var):
+#     def inner():
+#         print("hello")
+#     return inner
+# @outer
+# def show():
+#     print("from show function")
+# show()
+
+
 def outer(var):
-    def inner():
-        var()
+    def inner(a,b,c):
+        a=a+5
+        b=b+2
+        c=c+2
+        var(a,b,c)
     return inner
-def show():
-    print("from show function")
-res = outer(show)
-res()
+@outer
+def show(x,y,z):
+    print(x+y+z)
+show(2,5,6)
