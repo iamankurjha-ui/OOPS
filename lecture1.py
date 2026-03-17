@@ -54,14 +54,14 @@
 # show()
 
 
-def outer(var):
-    def inner(a,b,c):
-        a=a+5
-        b=b+2
-        c=c+2
-        var(a,b,c)
-    return inner
-@outer
-def show(x,y,z):
-    print(x+y+z)
-show(2,5,6)
+# def outer(var):
+#     def inner(a,b,c):
+#         a=a+5
+#         b=b+2
+#         c=c+2
+#         var(a,b,c)
+#     return inner
+# @outer
+# def show(x,y,z):
+#     print(x+y+z)
+# show(2,5,6)
