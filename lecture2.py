@@ -25,10 +25,17 @@
 
 
 
-class student:
-    def show(self):
-        print("hello")
-obj = student . __new__(student)
-print(id(student))
-print(id(obj))
+# class student:
+#     def show(self):
+#         print("hello")
+# obj = student . __new__(student)
+# print(id(student))
+# print(id(obj))
     
+    
+    
+class student:
+    def __init__ (self,x,y,z):
+        print(x,y,z)
+obj=student(10,20,30)
+print(id(obj))
