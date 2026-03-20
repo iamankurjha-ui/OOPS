@@ -34,8 +34,24 @@
     
     
     
-class student:
-    def __init__ (self,x,y,z):
-        print(x,y,z)
-obj=student(10,20,30)
-print(id(obj))
+# class student:
+#     def __init__ (self,x,y,z):
+#         print(x,y,z)
+# obj=student(10,20,30)
+# print(id(obj))
+
+
+# class student:
+#     def __init__(self):
+#         print('hello')
+#     def __init__(self,x):
+#         print('hello')
+#     def __init__(self,x,y,z):
+#         print('hello')
+# obj = student()
+
+
+# methds:
+#     instance method (first instance is self)
+#     class  method (first parameter is cls of classmethod)
+#     staticmethod (without self and cls as a parameter and staticmethod)
